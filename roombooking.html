@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+<title>BOOKROOM</title>
+<link rel="stylesheet" href="style1.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 30%;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+  background-color: #d3fafa17;
+}
+
+/* Middle column */
+.column.middle {
+  width: 75%;
+  text-align: center;
+  background-color: rgb(168, 219, 202);
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+
+/* Style the footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #dbd9d9;
+  margin-top: 20px;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>VISITORS VISITUS</h1>
+  <p>BOOK YOUR MOMENTS WITH US</p>
+</div>
+
+<div class="topnav">
+  <a href="home.html">HOME</a>
+  <a href="events.html">EVENTS BOOKING</a>
+  <a href="travel.html">TRAVEL PLANS</a>
+</div>
+
+<div class="row">
+  <div class="column side">
+    <h2>Book a Room</h2>
+    <form action="https://www.w3schools.com/action_page.php">
+        <label for="fname">YOUR NAME</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="arrival">ARRIVAL</label><br>
+        <input type="date" id="arrival" name="arrival"><br><br>
+        <label for="arrival">DEPARTURE</label><br>
+        <input type="date" id="departure" name="departure"><br><br>
+        <label for="arrival">ADULTS</label><br>
+        <input type="number" id="adults" name="adults" style="width: 12;"><br><br>
+        <label for="arrival">CHILDREN</label><br><b>
+        <input type="number" id="children" name="children" > <br><br>
+        <input type="submit" value="CHECK AVAILABILITY">
+      </form>
+     
+  </div>
+  
+  <div class="column middle">
+    <h2>Popular</h2>
+    <div class="gallery">
+      <a target="_blank" href="photo/single.jpg">
+        <img src="photo/single.jpg" alt="single standard" width="600" height="500">
+      </a>
+      <div class="desc">Standard<br>ILALA</div>
+    </div>
+    
+    <div class="gallery">
+      <a target="_blank" href="photo/master.jpg">
+        <img src="photo/master.jpg" alt="Forest" width="600" height="350">
+      </a>
+      <div class="desc">Executive<br>CHATONDA</div>
+    </div>
+    
+    <div class="gallery">
+      <a target="_blank" href="photo/executive.jpg">
+        <img src="photo/executive.jpg" alt="Northern Lights" width="600" height="350">
+      </a>
+      <div class="desc">Mastersuit<br>CHATONDA</div>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="photo/mastersuit2.jpg">
+        <img src="photo/mastersuit2.jpg" alt="Northern Lights" width="600" height="350">
+      </a>
+      <div class="desc">Standard Double<br>ILALA</div>
+    </div>
+    <div class="gallery">
+      <a target="_blank" href="photo/mastersuit1.jpg">
+        <img src="photo/mastersuit1.jpg" alt="Northern Lights" width="600" height="350">
+      </a>
+      <div class="desc">MasterDouble<br>ILALA</div>
+      
+    </div>
+  
+    
+</div>
+<div class="footer">
+  <br>
+  <p>Contact Us: Phone: 0881244539 Email: ammonsaukka@gmail.com</p>
+</div>
+  
+</body>
+</html>
+
+
