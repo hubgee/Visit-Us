@@ -52,23 +52,23 @@ body {
 }
 
 /* Left and right column */
-.column.side {
-  width: 25%;
+.form-column {
   background-color: #d3fafa17;
 }
 
 /* Middle column */
-.column.middle {
-  width: 75%;
-  text-align: center;
-  background-color: rgb(168, 219, 202);
+.gallery-column {
+  display: flex;
+  flex-wrap: wrap;
+	justify-content: center;
+	background-color:  rgba(168,219,202);
 }
 
 /* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+.container{
+  display:grid;
+  grid-template-columns: 30% 70%;
+  gap:10px;
   
 }
 
@@ -90,19 +90,19 @@ body {
 </head>
 <body>
 
-<div class="header">
+<header class="header">
   <h1>VISITORS VISITUS</h1>
   <p>BOOK YOUR MOMENTS WITH US</p>
-</div>
+</header>
 
-<div class="topnav">
+<nav class="topnav">
   <a href="home.html">HOME</a>
   <a href="events.html">EVENTS BOOKING</a>
   <a href="travel.html">TRAVEL PLANS</a>
-</div>
+</nav>
 
-<div class="row">
-  <div class="column side">
+<div class="container">
+  <div class= "form-column">
     <h2>Book a Room</h2>
     <form action="https://www.w3schools.com/action_page.php">
         <label for="fname">YOUR NAME</label><br>
@@ -113,21 +113,22 @@ body {
         <input type="date" id="departure" name="departure"><br><br>
         <label for="arrival">ADULTS</label><br>
         <input type="number" id="adults" name="adults" style="width: 12;"><br><br>
-        <label for="arrival">CHILDREN</label><br><b>
+        <label for="arrival">CHILDREN</label><br><br>
         <input type="number" id="children" name="children" > <br><br>
         <input type="submit" value="CHECK AVAILABILITY">
       </form>
-     
-  </div>
+	</div>
+		
   
-  <div class="column middle">
-    <h2>Popular</h2>
-    <div class="gallery">
+  
+    <div class="gallery-column">
+		<h1>popular</h1><b>
+		<div class="gallery">
       <a target="_blank" href="photo/single.jpg">
         <img src="photo/single.jpg" alt="single standard" width="600" height="500">
       </a>
       <div class="desc">Standard<br>ILALA</div>
-    </div>
+		</div>
     
     <div class="gallery">
       <a target="_blank" href="photo/master.jpg">
@@ -155,14 +156,15 @@ body {
       <div class="desc">MasterDouble<br>aucha</div>
       
     </div>
-  
-    
-</div>
-<div class="footer">
+	  </div>
+		</div>
+	  
+	  
+<footer class="footer">
   <br>
   <p>Contact Us: Phone: 0881244539 Email: MayaSauka@gmail.com</p>
-</div>
-  
+
+		</footer>
 </body>
 </html>
 
